@@ -1,0 +1,22 @@
+.site-msg {
+  padding: 0.85ex 1em;
+}
+
+.site-msg:after {
+  background-color: #f79e01;
+}
+
+.site-msg .text {
+  color: #fff;
+  font-weight: 500;
+}
+
+.site-msg .column {
+  padding-left: 0;
+  padding-right: 35px;
+}
+
+.site-msg .close:before,
+.site-msg .close:after {
+  color: #fff;
+}

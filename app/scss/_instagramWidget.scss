@@ -1,0 +1,46 @@
+.instagram-widget > a img {
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+#main + .instagram-widget {
+  max-width: unset;
+  background-color: #edecec;
+  position: relative;
+  margin-top: 40px;
+}
+
+body.in-napsali-o-nas #main + .instagram-widget {
+  margin-top: 90px;
+}
+
+#main + .instagram-widget .instagram-follow-btn {
+  display: block;
+  position: absolute;
+  top: -64px;
+  width: 100%;
+  text-align: center;
+}
+
+#main + .instagram-widget .instagram-follow-btn > span {
+  padding-left: 45px;
+}
+
+#main + .instagram-widget .instagram-follow-btn > span::before {
+  width: 32px;
+  font-size: 32px;
+  color: #f69e01;
+}
+
+#main + .instagram-widget .instagram-follow-btn a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  #main + .instagram-widget {
+    flex-wrap: nowrap;
+    padding: 0;
+    margin-top: 50px;
+  }
+}

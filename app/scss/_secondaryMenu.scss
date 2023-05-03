@@ -1,0 +1,75 @@
+.secondary-menu {
+  display: none;
+}
+
+@media (min-width: 40.01em) {
+  .secondary-menu {
+    display: flex;
+    align-items: center;
+    background-color: #efefef;
+    min-height: 42px;
+    margin-bottom: 5px;
+    position: relative;
+  }
+
+  .secondary-menu::after {
+    content: '';
+    display: block;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(239, 239, 239, 1) 90%);
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 95px;
+  }
+
+  .inner-secondary-menu {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 74.4em;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 100%;
+  }
+
+  .secondary-menu-list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+    scroll-snap-type: x proximity;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-right: 75px;
+  }
+
+  .secondary-menu-list::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  .secondary-menu-list > li {
+    scroll-snap-align: start;
+    white-space: nowrap;
+  }
+
+  .secondary-menu-list li a {
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+    padding: 5px 12px 5px 12px;
+  }
+
+  .secondary-menu-list li:first-child a {
+    padding-left: 0;
+  }
+
+  .secondary-menu-list li a:hover {
+    color: #f9b24f;
+  }
+}

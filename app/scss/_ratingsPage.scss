@@ -1,0 +1,142 @@
+body.admin-logged.in-hodnoceni-obchodu h1 {
+  margin-bottom: 22px;
+}
+
+body.admin-logged #ratingWrapper {
+  max-width: 830px;
+  min-height: 260px;
+  background-color: #f3f5f5;
+  padding: 40px 30px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body.admin-logged .rate-average-inner {
+  flex-direction: column;
+  max-width: 250px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 25px;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+body.admin-logged #ratingWrapper .rate-average {
+  font-weight: 400;
+  color: #21b501;
+  margin-bottom: 13px;
+}
+
+body.admin-logged #ratingWrapper .rate-form-trigger {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: -138px;
+  z-index: 3;
+}
+
+body.admin-logged #ratingWrapper .vote-form .js-hide-content-closed .js-hide-content {
+  margin: 0;
+}
+
+body.admin-logged #ratingWrapper .rate-star-wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 0;
+}
+
+body.admin-logged #ratingWrapper .stars {
+  margin-bottom: 6px;
+}
+
+body.admin-logged #ratingWrapper .star {
+  width: 22px;
+  height: 22px;
+}
+
+body.admin-logged #ratingWrapper .rate-average-wrap .star:before {
+  width: 22px;
+  height: 22px;
+  font-size: 22px;
+  line-height: 22px;
+  color: #f6c546;
+}
+
+body.admin-logged #ratingWrapper .rate-average-wrap .star.star-half:after {
+  width: 11px;
+  color: #f6c546;
+  font-size: 22px;
+  line-height: 22px;
+  height: 22px;
+}
+
+body.admin-logged .js-hide-content-closed .js-hide-content {
+  margin: 0;
+}
+
+body.admin-logged .rate-average-wrap + div .rate-list .star {
+  width: 88px !important;
+  height: 16px !important;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+}
+
+body.admin-logged .rate-average-wrap + div .rate-list:first-child .star {
+  background-image: url(https://cdn.myshoptet.com/usr/252557.myshoptet.com/user/documents/upload/Blank/Images/5stars.svg);
+}
+
+body.admin-logged .rate-average-wrap + div .rate-list:nth-child(2) .star {
+  background-image: url(https://cdn.myshoptet.com/usr/252557.myshoptet.com/user/documents/upload/Blank/Images/4stars.svg);
+}
+
+body.admin-logged .rate-average-wrap + div .rate-list:nth-child(3) .star {
+  background-image: url(https://cdn.myshoptet.com/usr/252557.myshoptet.com/user/documents/upload/Blank/Images/3stars.svg);
+}
+
+body.admin-logged .rate-average-wrap + div .rate-list:nth-child(4) .star {
+  background-image: url(https://cdn.myshoptet.com/usr/252557.myshoptet.com/user/documents/upload/Blank/Images/2stars.svg);
+}
+
+body.admin-logged .rate-average-wrap + div .rate-list:nth-child(5) .star {
+  background-image: url(https://cdn.myshoptet.com/usr/252557.myshoptet.com/user/documents/upload/Blank/Images/1stars.svg);
+}
+
+body.admin-logged .rate-average-wrap + div .rate-list .rate-value {
+  display: none;
+}
+
+body.admin-logged .rate-average-wrap + div .rate-list .rate-block {
+  display: flex;
+  flex-grow: 1;
+  background-color: #e6e6e6;
+  height: 6px;
+  border-radius: 2px;
+  position: relative;
+  padding-right: 0;
+  margin-right: 35px;
+}
+
+body.admin-logged .rate-average-wrap + div .rate-list .rate-count {
+  position: absolute;
+  right: -48px;
+  color: #24242e;
+  font-size: 13px;
+}
+
+body.admin-logged .rate-average-wrap + div .rate-list .rate-bar {
+  position: unset;
+  background-color: #fcb040;
+}
+
+@media only screen and (min-width: 40.063em){
+  body.admin-logged .rate-average-wrap {
+    width: 35%;
+  }
+
+  body.admin-logged .rate-average-wrap + div {
+    width: 65%;
+  }
+}

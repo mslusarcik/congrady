@@ -1,0 +1,21 @@
+#footer {
+  background: #e8e8e8;
+  margin-top: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .footer-in-wrap {
+    padding: 0;
+  }
+  #footer-in ul {
+    margin: 0;
+  }
+}
+
+@media (min-width: 993px) {
+  #footer .large-block-grid-4 > li {
+    width: 33%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
